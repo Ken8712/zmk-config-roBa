@@ -167,5 +167,23 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                  &trans
             >;
         };
+
+        textselecter {
+            bindings = <
+&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                 &trans  &trans  &trans  &trans  &trans
+&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans        &trans        &trans         &trans             &trans                 &trans  &trans                          &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        textselectror {
+            if-layers = <1 2>;
+            then-layer = <7>;
+        };
     };
 };
