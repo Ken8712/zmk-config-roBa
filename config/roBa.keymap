@@ -49,13 +49,13 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            bindings = <&kp AT>;
+            key-positions = <18 19>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        quote {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <19 20>;
         };
     };
 
@@ -121,10 +121,10 @@
 
         NUM {
             bindings = <
-&kp MINUS             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)                                                  &kp EQUAL          &kp CARET         &kp KP_PLUS      &kp ASTRK   &kp LEFT_PARENTHESIS
-&kp N0                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &kp LS(INT1)  &kp EXCLAMATION    &kp LEFT_BRACKET  &kp HASH         &kp DOLLAR  &kp PERCENT
-&mt LEFT_SHIFT SLASH  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD         &kp UNDERSCORE               &trans        &kp RIGHT_BRACKET  &kp BACKSLASH     &kp RIGHT_BRACE  &kp PIPE    &kp NON_US_BACKSLASH
-&trans                &trans        &trans        &trans        &trans             &trans                       &trans        &trans                                                            &kp LS(NON_US_BACKSLASH)
+&kp MINUS             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)                                                    &kp EQUAL          &kp CARET         &kp KP_PLUS      &kp ASTRK   &kp LEFT_PARENTHESIS
+&kp N0                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &kp LS(INT1)    &kp EXCLAMATION    &kp LEFT_BRACKET  &kp HASH         &kp DOLLAR  &kp PERCENT
+&mt LEFT_SHIFT SLASH  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD         &kp UNDERSCORE               &kp LEFT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp RIGHT_BRACE  &kp PIPE    &kp NON_US_BACKSLASH
+&trans                &trans        &trans        &trans        &trans             &trans                       &trans          &trans                                                            &kp LS(NON_US_BACKSLASH)
             >;
         };
 
@@ -136,15 +136,15 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
             bindings = <
-&kp  &kp              &kp  &kp  &kp                              &kp              &kp LG(LEFT_ARROW)  &kp LC(T)  &kp LG(RIGHT_ARROW)  &kp
-&kp  &kp              &kp  &kp  &kp          &kp      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1            &mkp MB3   &mkp MB2             &kp LC(TAB)
-&kp  &kp EXCLAMATION  &kp  &kp  &kp          &kp      &kp LC(C)  &kp              &mkp MB4            &kp LC(W)  &mkp MB5             &kp
-&kp  &kp              &kp  &kp  &lt 4 SPACE  &kp      &kp        &kp                                                                  &kp
+&kp ESCAPE  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp                              &kp              &kp LG(LEFT_ARROW)  &kp LC(T)      &kp LG(RIGHT_ARROW)  &kp LC(W)
+&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &kp      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1            &kp PAGE_UP    &mkp MB2             &kp LC(TAB)
+&kp         &kp EXCLAMATION         &kp LC(C)       &kp LC(V)                &kp          &kp      &kp LC(C)  &kp              &mkp MB4            &kp PAGE_DOWN  &mkp MB5             &kp
+&kp         &kp                     &kp             &kp                      &lt 4 SPACE  &kp      &kp        &kp                                                                      &kp
             >;
 
             sensor-bindings = <&scroll_up_down>;
