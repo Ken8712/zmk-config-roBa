@@ -16,7 +16,7 @@
     scroll-layers = <5>;
 
     arrows {
-        layers = <3>;
+        layers = <6>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
