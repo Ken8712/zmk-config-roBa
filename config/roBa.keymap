@@ -72,11 +72,25 @@
             label = "TO_LAYER_0";
         };
 
-        underbar: underbar {
+        hold_tap_and_release: underbar {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &kt MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kt MACRO_PLACEHOLDER>;
+            label = "UNDERBAR";
+        };
+
+        window_layout_1: window_layout_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_SHIFT &kp MINUS &kt LEFT_SHIFT>;
-            label = "UNDERBAR";
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LCTRL &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LCTRL &kp LALT>;
+
+            label = "WINDOW_LAYOUT_1";
         };
     };
 
@@ -128,10 +142,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp F7                              &kp F5           &kp LG(LEFT_ARROW)  &kp LC(T)      &kp LG(RIGHT_ARROW)  &kp LC(W)
-&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1            &kp PAGE_UP    &mkp MB2             &kp LC(TAB)
-&kp LC(Z)   &kp LC(Y)               &kp LC(C)       &kp LC(V)                &kp LG(TAB)  &kp F2      &kp LC(C)  &trans           &mkp MB4            &kp PAGE_DOWN  &mkp MB5             &kp LC(F)
-&trans      &trans                  &trans          &trans                   &lt 2 SPACE  &trans      &trans     &trans                                                                   &trans
+&kp ESCAPE  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp F7                              &kp F5           &hold_tap_and_release LEFT_GUI LEFT_ARROW  &kp LC(T)      &kp LG(RIGHT_ARROW)  &kp LC(W)
+&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1                                   &kp PAGE_UP    &mkp MB2             &kp LC(TAB)
+&kp LC(Z)   &kp LC(Y)               &kp LC(C)       &kp LC(V)                &kp LG(TAB)  &kp F2      &kp LC(C)  &trans           &mkp MB4                                   &kp PAGE_DOWN  &mkp MB5             &kp LC(F)
+&trans      &trans                  &trans          &trans                   &lt 2 SPACE  &trans      &trans     &trans                                                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,10 +164,10 @@
 
         FUNCTION {
             bindings = <
-&kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LA(LC(LG(N5)))                          &trans   &trans   &trans  &trans  &trans
-&kp F6                    &kp F7                    &kp F8                    &kp F9                    &kp F10             &trans          &trans  &trans   &trans   &trans  &trans  &trans
-&kp F1                    &kp F2                    &kp F3                    &kp F4                    &kp F5              &kp INSERT      &trans  &kp F11  &kp F12  &trans  &trans  &trans
-&trans                    &trans                    &trans                    &trans                    &trans              &trans          &trans  &trans                            &trans
+&window_layout_1  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LA(LC(LG(N5)))                          &trans   &trans   &trans  &trans  &trans
+&kp F6            &kp F7                    &kp F8                    &kp F9                    &kp F10             &trans          &trans  &trans   &trans   &trans  &trans  &trans
+&kp F1            &kp F2                    &kp F3                    &kp F4                    &kp F5              &kp INSERT      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans            &trans                    &trans                    &trans                    &trans              &trans          &trans  &trans                            &trans
             >;
         };
 
