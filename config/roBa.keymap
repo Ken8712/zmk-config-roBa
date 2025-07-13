@@ -151,12 +151,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        CTRLand... {
+        phrase_express {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(R)                &kp LC(T)                      &trans     &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(LS(P))
-&kp LC(A)       &kp LC(S)               &kp DOWN_ARROW  &kp LC(F)                &kp END    &trans      &trans  &trans     &trans     &kp LC(K)  &kp LC(L)  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &sk LEFT_SHIFT  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &trans  &kp LC(N)  &trans     &trans     &trans     &trans
-&trans          &trans                  &trans          &trans                   &trans     &trans      &trans  &trans                                      &trans
+&kp ESCAPE      &kp LC(LS(LA(W)))       &kp LS(LA(LC(E)))  &kp LC(R)                &kp LC(T)                      &trans     &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(LS(P))
+&kp LC(A)       &kp LC(S)               &kp DOWN_ARROW     &kp LC(F)                &kp END    &trans      &trans  &trans     &trans     &kp LC(K)  &kp LC(L)  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LS(LA(LC(C)))  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &trans  &kp LC(N)  &trans     &trans     &trans     &trans
+&trans          &trans                  &trans             &trans                   &trans     &trans      &trans  &trans                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
