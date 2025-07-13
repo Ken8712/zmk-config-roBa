@@ -107,7 +107,7 @@
         default_layer {
             bindings = <
 &kp Q          &kp W         &kp E         &kp R                        &kp T                                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A          &kp S         &kp D         &kp F                        &kp G                   &kp LS(LG(S))                    &lt_to_layer_0 5 F2        &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A          &kp S         &kp D         &kp F                        &kp G                   &kp LS(LG(S))                    &lt_to_layer_0 4 F2        &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z          &kp X         &kp C         &kp V                        &kp B                   &mt LEFT_SHIFT SINGLE_QUOTE      &mt RIGHT_SHIFT SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RCTRL SLASH
 &mt LCTRL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE              &lt 1 ENTER                             &kp DEL
             >;
@@ -130,7 +130,7 @@
             bindings = <
 &kp ESCAPE  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp F7                              &kp F5           &kp LG(LEFT_ARROW)  &kp LC(T)      &kp LG(RIGHT_ARROW)  &kp LC(W)
 &kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1            &kp PAGE_UP    &mkp MB2             &kp LC(TAB)
-&kp LC(Z)   &kp LC(Y)               &kp LC(C)       &kp LC(V)                &kp F2       &trans      &kp LC(C)  &trans           &mkp MB4            &kp PAGE_DOWN  &mkp MB5             &kp LC(F)
+&kp LC(Z)   &kp LC(Y)               &kp LC(C)       &kp LC(V)                &kp LG(TAB)  &kp F2      &kp LC(C)  &trans           &mkp MB4            &kp PAGE_DOWN  &mkp MB5             &kp LC(F)
 &trans      &trans                  &trans          &trans                   &lt 2 SPACE  &trans      &trans     &trans                                                                   &trans
             >;
 
@@ -150,10 +150,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LA(LC(LG(N5)))                          &trans   &trans   &trans  &trans  &trans
+&kp F6                    &kp F7                    &kp F8                    &kp F9                    &kp F10             &trans          &trans  &trans   &trans   &trans  &trans  &trans
+&kp F1                    &kp F2                    &kp F3                    &kp F4                    &kp F5              &kp INSERT      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans                    &trans                    &trans                    &trans                    &trans              &trans          &trans  &trans                            &trans
             >;
         };
 
