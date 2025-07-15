@@ -92,6 +92,36 @@
 
             label = "WINDOW_LAYOUT_1";
         };
+
+        change_up_task: change_up_task {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_wait_time 2000>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "CHANGE_UP_TASK";
+        };
+
+        change_down_task: change_down_tasks {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LS(TAB)>,
+                <&macro_wait_time 2000>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "CHANGE_DOWN_TASKS";
+        };
     };
 
     behaviors {
@@ -137,18 +167,18 @@
 &trans                &trans        &trans        &trans        &trans             &trans                &trans           &trans                                                            &kp PIPE2
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LS(LC(UP_ARROW)) LS(LC(DOWN_ARROW))>;
         };
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp F7                                    &kp F5           &hold_tap_and_release LEFT_GUI LEFT_ARROW  &kp LC(T)      &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LC(W)
-&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &kp LC(V)        &kp LC(LS(TAB))  &mkp MB1                                   &kp PAGE_UP    &mkp MB2                                    &kp LC(TAB)
-&kp LC(Z)   &kp LC(X)               &kp LC(C)       &kp LC(V)                &kp LG(TAB)  &kp F2      &kp LG(PAGE_UP)  &kp LG(LC(T))    &mkp MB4                                   &kp PAGE_DOWN  &mkp MB5                                    &kp LC(F)
-&trans      &trans                  &trans          &trans                   &lt 2 SPACE  &trans      &trans           &trans                                                                                                                 &trans
+&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp F7                                      &kp F5         &hold_tap_and_release LEFT_GUI LEFT_ARROW  &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &change_up_task    &kp LC(F)      &mkp MB1                                   &kp LG(TAB)                                 &mkp MB2                &kp F7
+&kp LC(Z)   &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(A)    &kp F2      &change_down_task  &kp LG(LC(T))  &mkp MB4                                   &kp PAGE_DOWN                               &mkp MB5                &kp LC(F)
+&trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans             &trans                                                                                                                        &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PAGE_UP) LG(PAGE_DOWN)>;
         };
 
         phrase_express {
@@ -191,13 +221,13 @@
 
         textselecter {
             bindings = <
-&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                 &trans  &trans  &trans  &trans  &trans
+&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                 &trans  &trans  &trans  &trans  &kp LC(W)
 &kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &trans  &trans  &trans  &trans  &trans  &trans
 &trans            &trans        &trans        &trans         &trans             &trans                 &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LS(LC(UP_ARROW)) LS(LC(DOWN_ARROW))>;
         };
     };
 
