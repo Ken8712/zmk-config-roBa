@@ -167,7 +167,7 @@
 &trans                &trans        &trans        &trans        &trans             &trans                &trans           &trans                                                            &kp PIPE2
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LC(UP_ARROW)) LS(LC(DOWN_ARROW))>;
+            sensor-bindings = <&inc_dec_kp LS(LC(DOWN_ARROW)) LS(LC(UP_ARROW))>;
         };
 
         MOUSE {
@@ -178,7 +178,7 @@
 &trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans             &trans                                                                                                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PAGE_UP) LG(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LG(PAGE_DOWN) LG(PAGE_UP)>;
         };
 
         phrase_express {
@@ -227,7 +227,7 @@
 &trans            &trans        &trans        &trans         &trans             &trans                 &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LC(UP_ARROW)) LS(LC(DOWN_ARROW))>;
+            sensor-bindings = <&inc_dec_kp LS(LC(DOWN)) LS(LC(UP_ARROW))>;
         };
     };
 
