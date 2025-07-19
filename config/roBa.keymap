@@ -222,8 +222,8 @@
         textselecter {
             bindings = <
 &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                 &trans  &trans  &trans  &trans  &kp LC(W)
-&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &trans  &trans  &trans  &trans  &trans  &kp LG(UP_ARROW)
-&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &trans  &trans  &trans  &trans  &trans  &kp LG(DOWN_ARROW)
+&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &trans  &trans  &trans  &trans  &trans  &hold_tap_and_release LEFT_GUI UP_ARROW
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &trans  &trans  &trans  &trans  &trans  &hold_tap_and_release LEFT_GUI DOWN_ARROW
 &trans            &trans        &trans        &trans         &trans             &trans                 &trans  &trans                          &trans
             >;
 
