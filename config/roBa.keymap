@@ -164,7 +164,7 @@
 &kp MINUS             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)                                              &kp EQUAL          &kp CARET         &kp PLUS         &kp ASTRK   &kp LEFT_PARENTHESIS
 &kp N0                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES  &kp LG(NUMBER_1)      &kp EXCLAMATION  &kp EXCLAMATION    &kp LEFT_BRACKET  &kp HASH         &kp DOLLAR  &kp PERCENT
 &mt LEFT_SHIFT SLASH  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD         &kp UNDERSCORE        &kp LEFT_BRACE   &kp RIGHT_BRACKET  &kp BACKSLASH     &kp RIGHT_BRACE  &kp PIPE    &kp INTERNATIONAL_1
-&trans                &trans        &trans        &trans        &trans             &trans                &trans           &trans                                                            &kp INT3
+&trans                &trans        &trans        &trans        &trans             &trans                &trans           &trans                                                            &kp LS(INT3)
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LC(DOWN_ARROW)) LS(LC(UP_ARROW))>;
