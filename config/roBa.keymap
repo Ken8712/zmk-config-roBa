@@ -66,6 +66,13 @@
             bindings = <&kp LS(INTERNATIONAL_1)>;
             key-positions = <20 21>;
         };
+
+        add_new_desktop {
+            bindings = <&kp LC(LG(D))>;
+            key-positions = <8 9>;
+            timeout-ms = <40>;
+            layers = <2>;
+        };
     };
 
     macros {
