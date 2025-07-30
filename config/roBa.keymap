@@ -36,11 +36,15 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
         muhennkann {
@@ -122,6 +126,20 @@
 
             label = "CHANGE_DOWN_TASKS";
         };
+
+        ctrl_click: ctrl_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&mkp LCLK>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_CLICK";
+        };
     };
 
     behaviors {
@@ -172,10 +190,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp F7                                      &kp F5         &hold_tap_and_release LEFT_GUI LEFT_ARROW  &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
-&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &change_up_task    &kp LC(F)      &mkp MB1                                   &kp LG(TAB)                                 &mkp MB2                &kp F7
-&kp LC(Z)   &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(A)    &kp F2      &change_down_task  &kp LG(LC(T))  &mkp MB4                                   &kp PAGE_DOWN                               &mkp MB5                &kp LC(F)
-&trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans             &trans                                                                                                                        &trans
+&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp F7                                          &kp F5         &hold_tap_and_release LEFT_GUI LEFT_ARROW  &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &kp LS(LC(SEMICOLON))  &kp LC(F)      &mkp MB1                                   &kp LG(TAB)                                 &mkp MB2                &kp F7
+&kp LC(Z)   &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(A)    &kp F2      &kp LC(MINUS)          &kp LG(LC(T))  &mkp MB4                                   &kp PAGE_DOWN                               &mkp MB5                &kp LC(LS(T))
+&trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans                 &trans                                                                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PAGE_DOWN) LG(PAGE_UP)>;
@@ -195,8 +213,8 @@
         FUNCTION {
             bindings = <
 &window_layout_1  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp LA(LC(LG(N5)))                          &trans   &trans   &trans  &trans  &trans
-&kp F6            &kp F7                    &kp F8                    &kp F9                    &kp F10             &trans          &trans  &trans   &trans   &trans  &trans  &trans
-&kp F1            &kp F2                    &kp F3                    &kp F4                    &kp F5              &kp INSERT      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&kp F6            &kp LC(N4)                &kp LC(N5)                &kp LC(N6)                &trans              &trans          &trans  &trans   &trans   &trans  &trans  &trans
+&kp F1            &kp LC(N1)                &kp LC(N2)                &kp LC(N3)                &trans              &kp INSERT      &trans  &kp F11  &kp F12  &trans  &trans  &trans
 &trans            &trans                    &trans                    &trans                    &trans              &trans          &trans  &trans                            &trans
             >;
         };
@@ -213,7 +231,7 @@
         bluetooth {
             bindings = <
 &trans  &kp LG(N7)        &kp LG(E)         &trans      &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &kp LG(N4)        &kp LG(N5)        &kp LG(N6)  &trans  &trans      &bt BT_CLR      &trans        &trans        &trans        &trans        &trans
+&trans  &kp LG(N4)        &kp LG(N5)        &kp LG(N6)  &trans  &trans      &bt BT_CLR      &trans        &ctrl_click   &trans        &trans        &trans
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(N3)  &trans  &trans      &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans
 &trans  &trans            &trans            &trans      &trans  &trans      &trans          &trans                                                  &trans
             >;
