@@ -74,15 +74,15 @@
             layers = <2>;
         };
 
-        ctrl+pageup {
-            bindings = <&kp LC(PAGE_UP)>;
+        ctrl+home {
+            bindings = <&kp LC(HOME)>;
             key-positions = <1 2>;
             timeout-ms = <30>;
             layers = <2>;
         };
 
-        ctrl+pagedown {
-            bindings = <&kp LC(PAGE_DOWN)>;
+        ctrl+end {
+            bindings = <&kp LC(END)>;
             key-positions = <2 3>;
             timeout-ms = <30>;
             layers = <2>;
@@ -217,7 +217,7 @@
 &trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans                 &trans                                                                                                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PAGE_DOWN) LG(PAGE_UP)>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         phrase_express_LL {
