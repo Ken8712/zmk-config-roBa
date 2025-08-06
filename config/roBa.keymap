@@ -73,6 +73,20 @@
             timeout-ms = <40>;
             layers = <2>;
         };
+
+        ctrl+pageup {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+            layers = <2>;
+        };
+
+        ctrl+pagedown {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <2 3>;
+            timeout-ms = <30>;
+            layers = <2>;
+        };
     };
 
     macros {
