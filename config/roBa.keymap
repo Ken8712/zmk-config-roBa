@@ -189,10 +189,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E         &kp R                        &kp T                                                                               &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A          &kp S         &kp D         &kp F                        &kp G                   &kp LS(LG(S))                    &lt_to_layer_0 4 F2        &kp H                   &kp J  &kp K      &kp L    &kp MINUS
-&kp Z          &kp X         &kp C         &kp V                        &kp B                   &mt LEFT_SHIFT SINGLE_QUOTE      &mt RIGHT_SHIFT SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RCTRL SLASH
-&mt LCTRL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE              &lt_to_layer_0 1 ENTER                             &kp DEL
+&kp Q          &kp W         &kp E         &kp R                        &kp T                                                                    &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A          &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                    &lt_to_layer_0 4 F2        &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z          &kp X         &kp C         &kp V                        &kp B        &mt LEFT_SHIFT SINGLE_QUOTE      &mt RIGHT_SHIFT SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RCTRL SLASH
+&mt LCTRL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE              &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
