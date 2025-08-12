@@ -47,11 +47,6 @@
             layers = <0>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp AT>;
             key-positions = <18 19>;
