@@ -99,6 +99,7 @@
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <12>;
+        debounce-ms = <8>;
         status = "disabled";
     };
 
