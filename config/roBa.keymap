@@ -186,7 +186,7 @@
             bindings = <
 &kp Q          &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A          &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                    &lt_to_layer_0 4 F2       &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z          &kp X         &kp C         &kp V                        &kp B        &mt LEFT_SHIFT SINGLE_QUOTE      &mt LEFT_SHIFT SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RCTRL SLASH
+&kp Z          &kp X         &kp C         &kp V                        &kp B        &mt LEFT_SHIFT SINGLE_QUOTE      &mt LEFT_SHIFT SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
 &mt LCTRL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE             &lt 1 ENTER                             &kp DEL
             >;
 
@@ -255,10 +255,10 @@
 
         textselecter_LM+RR {
             bindings = <
-&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                        &kp LC(LA(LS(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(O)))  &kp LC(W)
-&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &kp PAGE_UP    &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(L)))  &hold_tap_and_release LEFT_GUI UP_ARROW
-&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &kp PAGE_DOWN  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &trans             &trans             &hold_tap_and_release LEFT_GUI DOWN_ARROW
-&trans            &trans        &trans        &trans         &trans             &trans                 &trans         &trans                                                                      &trans
+&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                        &kp LC(LA(LS(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))       &kp LS(LA(LC(O)))  &kp LC(W)
+&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &kp PAGE_UP    &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(DOWN_ARROW))  &kp LS(LA(LC(L)))  &hold_tap_and_release LEFT_GUI UP_ARROW
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &kp PAGE_DOWN  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &trans                  &trans             &hold_tap_and_release LEFT_GUI DOWN_ARROW
+&trans            &trans        &trans        &trans         &trans             &trans                 &trans         &trans                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LC(DOWN)) LS(LC(UP_ARROW))>;
