@@ -206,10 +206,10 @@
 
         MOUSE+Arrows_LM {
             bindings = <
-&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp F7                                          &kp F5         &hold_tap_and_release LEFT_GUI LEFT_ARROW  &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
-&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &kp LS(LC(SEMICOLON))  &kp LC(F)      &mkp MB1                                   &kp LG(TAB)                                 &mkp MB2                &kp F7
-&kp LC(Z)   &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(A)    &kp F2      &kp LC(MINUS)          &kp LG(LC(T))  &mkp MB4                                   &kp PAGE_DOWN                               &mkp MB5                &mt LCTRL LS(LC(T))
-&trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans                 &trans                                                                                                                        &trans
+&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp F7                                  &kp F5         &hold_tap_and_release LEFT_GUI LEFT_ARROW  &hold_tap_and_release LEFT_GUI RIGHT_ARROW  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &kp PAGE_UP    &kp LC(F)      &mkp MB1                                   &kp LG(TAB)                                 &mkp MB2                &kp F7
+&kp LC(Z)   &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(A)    &kp F2      &kp PAGE_DOWN  &kp LG(LC(T))  &mkp MB4                                   &kp PAGE_DOWN                               &mkp MB5                &mt LCTRL LS(LC(T))
+&trans      &trans           &trans          &trans           &lt 2 SPACE  &trans      &trans         &trans                                                                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -217,10 +217,10 @@
 
         phrase_express_LL {
             bindings = <
-&kp ESCAPE      &kp LC(LS(LA(W)))       &kp LS(LA(LC(E)))  &kp LC(R)                &kp LC(T)                      &trans         &kp LC(U)  &kp LC(I)       &kp LC(O)  &kp LC(LS(P))
-&kp LC(A)       &kp LC(S)               &kp LA(LC(K))      &kp LC(F)                &kp END    &trans      &trans  &trans         &trans     &kp LC(LG(F4))  &kp LC(L)  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LS(LA(LC(C)))  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &trans  &kp LC(N)      &trans     &trans          &trans     &trans
-&trans          &trans                  &trans             &trans                   &trans     &trans      &trans  &kp LG(SLASH)                                        &trans
+&kp ESCAPE      &kp LC(LS(LA(W)))       &kp LS(LA(LC(E)))  &kp LC(R)                &kp LC(T)                                     &trans         &kp LC(U)  &kp LC(I)       &kp LC(O)  &kp LC(LS(P))
+&kp LC(A)       &kp LC(S)               &kp LA(LC(K))      &kp LC(F)                &kp END    &trans      &kp LS(LC(SEMICOLON))  &trans         &trans     &kp LC(LG(F4))  &kp LC(L)  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LS(LA(LC(C)))  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &kp LC(MINUS)          &kp LC(N)      &trans     &trans          &trans     &trans
+&trans          &trans                  &trans             &trans                   &trans     &trans      &trans                 &kp LG(SLASH)                                        &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -255,10 +255,10 @@
 
         textselecter_LM+RR {
             bindings = <
-&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                        &kp LC(LA(LS(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))       &kp LS(LA(LC(O)))  &kp LC(W)
-&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &kp PAGE_UP    &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(DOWN_ARROW))  &kp LS(LA(LC(L)))  &hold_tap_and_release LEFT_GUI UP_ARROW
-&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &kp PAGE_DOWN  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &trans                  &trans             &hold_tap_and_release LEFT_GUI DOWN_ARROW
-&trans            &trans        &trans        &trans         &trans             &trans                 &trans         &trans                                                                           &trans
+&kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LS(UP)    &kp LC(RIGHT)  &kp LS(LC(RIGHT))                                       &kp LC(LA(LS(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))       &kp LS(LA(LC(O)))  &kp LC(W)
+&kp LS(HOME)      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(END)        &trans                 &kp LC(HOME)  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LS(LA(DOWN_ARROW))  &kp LS(LA(LC(L)))  &hold_tap_and_release LEFT_GUI UP_ARROW
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)      &kp LC(RET)        &kp LC(BACKSPACE)      &kp LC(END)   &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &trans                  &trans             &hold_tap_and_release LEFT_GUI DOWN_ARROW
+&trans            &trans        &trans        &trans         &trans             &trans                 &trans        &trans                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LC(DOWN)) LS(LC(UP_ARROW))>;
