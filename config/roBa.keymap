@@ -149,6 +149,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 30>,
                 <&macro_tap>,
                 <&mkp LCLK>,
                 <&macro_release>,
@@ -217,10 +218,10 @@
 
         phrase_express_LL {
             bindings = <
-&kp ESCAPE      &kp LC(LS(LA(W)))       &kp LS(LA(LC(E)))  &kp LC(R)                &kp LC(T)                                     &trans         &kp LC(U)  &kp LC(I)       &kp LC(O)  &kp LC(LS(P))
-&kp LC(A)       &kp LC(S)               &kp LA(LC(K))      &kp LC(F)                &kp END    &trans      &kp LS(LC(SEMICOLON))  &trans         &trans     &kp LC(LG(F4))  &kp LC(L)  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LS(LA(LC(C)))  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &kp LC(MINUS)          &kp LC(N)      &trans     &trans          &trans     &trans
-&trans          &trans                  &trans             &trans                   &trans     &trans      &trans                 &kp LG(SLASH)                                        &trans
+&kp ESCAPE      &kp LC(LS(LA(W)))       &kp LS(LA(LC(E)))  &kp LC(R)                &kp LC(T)                                     &trans         &kp LC(U)    &kp LC(I)       &kp LC(O)  &kp LC(LS(P))
+&kp LC(A)       &kp LC(S)               &kp LA(LC(K))      &kp LC(F)                &kp END    &trans      &kp LS(LC(SEMICOLON))  &trans         &ctrl_click  &kp LC(LG(F4))  &kp LC(L)  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LS(LA(LC(C)))  &kp LG(LS(RIGHT_ARROW))  &kp LC(B)  &trans      &kp LC(MINUS)          &kp LC(N)      &trans       &trans          &trans     &trans
+&trans          &trans                  &trans             &trans                   &trans     &trans      &trans                 &kp LG(SLASH)                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
